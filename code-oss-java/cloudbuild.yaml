@@ -3,5 +3,5 @@ steps:
 # build
 - id: "build"
   name: 'gcr.io/cloud-builders/docker'
-  args: ['build', '-t', 'us-central1-docker.pkg.dev/${PROJECT_ID}/artifact-scanning-repo/sample-image', '.']
+  args: ['build', '-t', 'us-central1-docker.pkg.dev/${PROJECT_ID}/artifact-scanning-repo/sample-image', './code-oss-java']
   waitFor: ['-']
